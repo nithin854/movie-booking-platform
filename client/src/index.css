@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.public-bg-wrapper {
+  min-height: 100dvh;
+  min-height: 100vh;
+  background-image: url("../public/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px) grayscale(100%);
+}
+
+.public-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100dvh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form,
+.register-form {
+  min-width: 600px;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#root,
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.primary__header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: space-between;
+  height: 10dvh;
+}
+
+.primary__title {
+  color: white;
+  margin-bottom: 0;
+}
+
+.primary__content__area {
+  padding-inline: 3.125rem;
+  padding-block: 2rem;
+  min-height: calc(100dvh - 10dvh);
+}
+
+.primary__page__link {
+  cursor: pointer;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0.5rem;
+}
+
+.movie-card {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie-information-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.theatre-seats {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 2rem;
+  padding-inline: 5rem;
+}
+
+.screen {
+  height: 10px;
+  background-color: black;
+  margin-block: 2rem;
+  margin-bottom: 5rem;
+}
+
+.seat {
+  border: 1px solid gray;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: red;
+  color: white;
+}
+
+.booked {
+  background-color: gainsboro;
+  pointer-events: none;
+}
+
+.success-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.success-texts > * {
+  margin-block: 1rem;
+  text-align: center;
+}
