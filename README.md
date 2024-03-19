@@ -1,1 +1,1 @@
-# e-commerce-basic
+# movie-booking-platform
